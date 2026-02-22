@@ -1,0 +1,482 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Inter, Helvetica, Arial, Lucida, sans-serif;
+}
+
+.nav1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1.62fr;
+    /* border: 2px solid black; */
+    background-color: #ffd741;
+}
+
+.promo {
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    padding: 15px;
+    padding-left: 100px;
+    gap: 10px;
+}
+
+.promoimg {
+    width: 30px;
+}
+
+.promotext {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.promotext div:nth-child(1) {
+    font-size: 18px;
+}
+
+.promotext div:nth-child(2) {
+    font-size: 15px;
+}
+
+.getultraedit {
+    /* border: 2px solid black; */
+    margin: 3px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+}
+
+.timeleft {
+    /* border: 2px solid black; */
+    margin: 3px;
+    padding: 3px;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+    gap: 5px;
+    font-size: smaller;
+}
+
+.timeleftbox {
+    border: 1px solid black;
+    width: 225px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.innertime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.innertime span:nth-child(1) {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.innertime p:nth-child(2) {
+    font-size: small;
+    font-weight: lighter;
+}
+
+
+/* --------------------- MAIN NAV --------------------------------- */
+
+.nav2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainnav {
+    background-color: #f6f6f6;
+    /* border: 2px solid black; */
+    width: 85vw;
+    margin: 20px;
+    height: 85px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1.5fr;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0px 30px;
+}
+
+.navmenu {
+    /* border: 2px solid black; */
+    margin: 5px;
+    height: 58px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 195px;
+    font-size: 15px;
+}
+
+.navmenu a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navright {
+    /* border: 2px solid black; */
+    height: 58px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downloadbtn {
+    /* border: 2px solid black; */
+    width: 105px;
+    height: 35px;
+    margin: auto;
+    background-color: #ffd741;
+    border-radius: 3px;
+}
+
+.englishbtn {
+    width: 105px;
+    height: 30px;
+    /* border: 2px solid black; */
+    margin: auto;
+    /* align-items: normal; */
+    justify-content: flex-start;
+}
+
+.searchbtn img {
+    width: 30px;
+    transform: scaleX(-1);
+    padding-left: 7px;
+}
+
+.englishbtn img {
+    width: 20px;
+    margin: 7px;
+}
+
+/* ------------------------------- HERO SECTION ----------------------------------------- */
+
+.hero {
+    flex-direction: column;
+    width: 85vw;
+    margin: auto;
+}
+
+.heroheading {
+    font-size: 25px;
+    margin: 10px 13px 40px 13px;
+}
+
+.heroheading h1 {
+    font-weight: lighter;
+    color: #222222;
+}
+
+.heropara p {
+    text-align: center;
+    color: grey;
+    font-size: 20px;
+    width: 40vw;
+    margin-bottom: 40px;
+}
+
+.herobtn {
+    /* border: 2px solid black; */
+    background-color: #ffd741;
+    border-radius: 3px;
+    width: 325px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.herobtn img {
+    width: 15px;
+    margin: 5px;
+}
+
+.herov {
+    gap: 10px;
+    color: grey;
+}
+
+.herov h2 {
+    color: grey;
+}
+
+/* -------------------------------- CARDS ---------------------------------------- */
+
+.cardscontainer {
+    width: 85vw;
+    margin: 50px auto;
+    border: 2px solid block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 equal columns */
+    grid-auto-flow: row;
+    /* Default: items flow horizontally then wrap */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* text-decoration: none; */
+}
+
+.card {
+    /* border: 2px solid black; */
+    height: 190px;
+    width: 360px;
+    margin: auto;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 3px;
+    background-color: #f2f0ec;
+}
+
+.card h3 {
+    font-size: 26px;
+}
+
+.card h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card a {
+    padding: 6px 25px;
+    background-color: #ffd741;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.card p:nth-of-type(1) {
+    font-size: 10px;
+}
+
+.card p:nth-of-type(2) {
+    font-size: 8px;
+}
+
+/* -----------------------------------JOIN SECTION--------------------------- */
+
+.joincontainer {
+    width: 70vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.joinbox {
+    /* border: 2px solid red; */
+    margin: 60px auto;
+    height: 130px;
+    width: 394px;
+}
+
+.joinbox h2 {
+    font-size: 30px;
+}
+
+.joinbox p {
+    color: #423f3fe3;
+}
+
+.subscribebox {
+    /* border: 2px solid red; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #2e2e2e;
+    width: 370px;
+    height: 155px;
+}
+
+.subscribebox a {
+    text-decoration: none;
+}
+
+.subscribebox h3 {
+    font-size: 24px;
+    color: #007aff;
+}
+
+.subscribebox h4 {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.subscribebox input {
+    width: 240px;
+    height: 32px;
+    /* margin-bottom: 10px; */
+}
+
+.subscribebox a {
+    background-color: #ffd741;
+    width: 85px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* -------------------------------- FOOTER ------------------------------ */
+/* ------------------- UPPER FOOTER ------------------- */
+.footer {
+    background-color: #f2f0ec;
+    /* border: 2px solid black; */
+    height: 800px;
+}
+
+.upperfooter {
+    width: 60vw;
+    margin: 117px auto;
+    padding-top: 50px;
+}
+
+.exe {
+    margin-right: 100px;
+    width: 550px;
+    /* border: 2px solid black; */
+    height: 150px;
+}
+
+.exe h2 {
+    /* color: #2e2e2e9f; */
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.exe p {
+    margin-top: 10px;
+}
+
+.free {
+    width: 475px;
+    /* border: 2px solid black; */
+    height: 150px;
+}
+
+.free h2 {
+    /* color: #2e2e2e9f; */
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.free p {
+    margin-top: 10px;
+}
+
+/* -------------------- LOWER FOOTER ---------------------- */
+.lowerfooter {
+    width: 90vw;
+    background-color: #232323;
+    border-radius: 5px;
+    margin: auto;
+    color: #f2f0ec;
+    height: 350px;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.footercolumns {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1.2fr 1fr 1fr;
+
+}
+
+.footercolumn {
+    /* border: 2px solid red; */
+}
+
+.footercolumn h3 {
+    padding: 5px;
+}
+
+.footercolumn ul {
+    list-style-type: none;
+    line-height: 1.5em;
+}
+
+.footercolumn ul li {
+    padding: 5px 0px 0px 5px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.uefooter {
+    width: 400px;
+    /* border: 2px solid red; */
+}
+
+.newslettercontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 80px;
+}
+
+.newsletter {
+    /* border: 2px solid red; */
+    line-height: 30px;
+    padding: 10px 40px;
+}
+
+.newsletter p {
+    color: rgb(157, 157, 157);
+}
+
+.newslettermailbox {
+    margin-top: 10px;
+    height: 30px;
+    width: 250px;
+    background-color: #3b3b3b;
+    padding: 4px 10px;
+    border-radius: 3px;
+}
+
+.newsletter input:nth-of-type(1) {
+    color: white;
+    background-color: #3b3b3b;
+    border: none;
+
+}
+
+.newsletter input:nth-of-type(2) {
+    background-color: #f7cb14;
+    border: none;
+    background-color: #f7cb14;
+    border: none;
+    padding: 5px 13px;
+    border-radius: 3px;
+}
+
+.copyright {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+}
